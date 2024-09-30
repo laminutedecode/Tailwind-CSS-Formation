@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <!-- CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <section class="w-full max-w-[1200px] m-auto p-2 pt-10">
+    <a href="../index.html" class="inline-block w-32 text-white cursor-pointer bg-blue-500 hover:bg-blue-600 p-2 rounded-md text-center">
+      Retour
+    </a>
+
+
+    
+    <h2 class="text-center text-blue-500 font-bold m-3">Focus & autres states</h2>
+    <div class="my-3 text-center p-3  flex flex-col justify-center items-center gap-2">
+      <!-- DEBUT DE FORMATION -->
+
+      <!-- focus -->
+      <input class="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring focus:ring-violet-300" type="text">
+      
+      <h2 class="text-center text-blue-500 font-bold m-3">placeholder</h2>
+
+      <input class="placeholder:italic placeholder:text-slate-400 block border border-slate-300 rounded-md p-2" placeholder="Rechercher..." type="text" name="search"/>
+      
+      
+      <h2 class="text-center text-blue-500 font-bold m-3">First-Line</h2>
+      <!-- first line -->
+      <p class="first-line:uppercase first-line:tracking-widest">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates eveniet nihil ea culpa similique eaque in expedita facilis iste, vel dolore? Dolorum similique assumenda eaque alias sit aspernatur, adipisci officia rerum fuga. Distinctio illo suscipit iste hic non doloribus, illum quaerat possimus ratione similique maiores sit delectus. Ipsam, quo!
+        </p>
+        <h2 class="text-center text-blue-500 font-bold m-3">First-Letter</h2>
+      <!-- first letter -->
+      <p class="first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+          first-letter:mr-3 first-letter:float-left
+        ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates eveniet nihil ea culpa similique eaque in expedita facilis iste, vel dolore? Dolorum similique assumenda eaque alias sit aspernatur, adipisci officia rerum fuga. Distinctio illo suscipit iste hic non doloribus, illum quaerat possimus ratione similique maiores sit delectus. Ipsam, quo!
+        </p>
+
+        <h2 class="text-center text-blue-500 font-bold m-3">Selected</h2>
+        <!-- Selected -->
+        <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus impedit incidunt adipisci rem repellat pariatur quae, culpa beatae suscipit omnis ratione voluptates quasi a nostrum repellendus natus esse dolorum?
+          </p>
+        </div>
+
+        <h2 class="text-center text-blue-500 font-bold m-3">Before et After</h2>
+        <!-- before after -->
+        <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+          Lorem ipsum dolor sit
+          <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+            <span class="relative text-white">MDC</span>
+          </span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, consectetur.
+        </blockquote>
+
+        
+        
+      
+      </div>
+    </section>
+  
+  
+
+  
+</body>
+</html>

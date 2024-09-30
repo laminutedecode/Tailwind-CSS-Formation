@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <!-- CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <section class="w-full max-w-[1200px] m-auto p-2 pt-10">
+    <a href="../index.html" class="inline-block w-32 text-white cursor-pointer bg-blue-500 hover:bg-blue-600 p-2 rounded-md text-center">
+      Retour
+    </a>
+
+
+       <!-- DEBUT DE FORMATION -->
+
+       <h2 class="text-center text-blue-500 font-bold m-3">Transition</h2>
+       <div class="my-3 text-center shadow-md p-3  flex items-center gap-2">
+        <!-- hover:[property]-->
+        <!-- transition-all | transition-[property]-->
+        <p class="size-64 bg-red-500 hover:bg-red-900">item</p>
+        <p class="size-64 bg-red-500 hover:bg-red-900 transition-colors">item</p>
+        <p class="size-64 bg-red-500 hover:bg-red-900 hover:text-orange-700 transition-all">item</p>
+      </div>
+       <div class="my-3 text-center shadow-md p-3  flex items-center gap-2">
+        <!-- duration-[75 | 100 | 150 | 200 | 300 | 500 | 700 | 1000] -->
+        <p class="size-64 bg-green-500 hover:bg-green-900 transition-all duration-1000">item</p>
+
+        <!-- ease-[in | out | linear | in-out] -->
+        <p class="size-64 bg-purple-500 hover:bg-purple-900 transition-all duration-700 ease-in-out	">ease-in-out</p>
+        <p class="size-64 bg-purple-500 hover:bg-purple-900 transition-all duration-700 ease-in	">ease-in</p>
+        <p class="size-64 bg-purple-500 hover:bg-purple-900 transition-all duration-700 ease-out	">ease out</p>
+        <p class="size-64 bg-purple-500 hover:bg-purple-900 transition-all duration-700 ease-linear	">ease linear</p>
+        <!-- delay-[75 | 100 | 150 | 200 | 300 | 500 | 700 | 1000] -->
+        <p class="size-64 bg-blue-500 hover:bg-blue-900 transition-all duration-700 ease-linear delay-500		">delay</p>
+      </div>
+
+
+  </section>
+  
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <!-- CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <section class="w-full max-w-[1200px] m-auto p-2 pt-10">
+    <a href="../index.html" class="inline-block w-32 text-white cursor-pointer bg-blue-500 hover:bg-blue-600 p-2 rounded-md text-center">
+      Retour
+    </a>
+
+
+    
+    <h2 class="text-center text-blue-500 font-bold m-3">Grid partie 1</h2>
+    <div class="my-3 text-center shadow-md p-3  flex flex-col gap-2">
+      <!-- DEBUT DE FORMATION -->
+
+      <!-- grid + grid-cols-[1 à 12] -->
+      <div class="grid grid-cols-3 p-3 bg-red-400 w-full mb-2">
+          <div class=" bg-gray-500 ">item 1</div>
+          <div class=" bg-violet-500 ">item 2</div>
+          <div class=" bg-blue-500">item 3</div>
+      </div>
+      <!-- col-span-[1 à 12] -->
+      <div class="grid grid-cols-12 p-3 bg-red-400 w-full mb-2">
+          <div class=" bg-gray-500">item 1</div>
+          <div class=" bg-violet-500 col-span-4">item 2</div>
+          <div class=" bg-blue-500">item 3</div>
+      </div>
+      <!-- col-end-[1 à 12] -->
+      <!-- col-start-[1 à 12] -->
+      <div class="grid grid-cols-12 p-3 bg-red-400 w-full mb-2">
+          <div class=" bg-gray-500 col-start-1 col-end-4">item 1</div>
+          <div class=" bg-violet-500">item 2</div>
+          <div class=" bg-blue-500">item 3</div>
+      </div>
+      <!-- grid + grid-rows-[1 à 12] + grid-flow-col -->
+      <div class="grid grid-rows-12 grid-flow-col p-3 bg-red-400 w-full mb-2">
+          <div class=" bg-gray-500 col-start-1 col-end-4">item 1</div>
+          <div class=" bg-violet-500">item 2</div>
+          <div class=" bg-blue-500">item 3</div>
+      </div>
+           <!-- row-span-[1 à 12] -->
+      <div class="grid grid-rows-12 grid-flow-col p-3 bg-red-400 w-full mb-2">
+          <div class="bg-gray-500 row-span-2">item 1</div>
+          <div class="bg-violet-500">item 2</div>
+          <div class="bg-blue-500">item 3</div>
+      </div>
+           <!-- row-end-[1 à 12] -->
+      <!-- row-start-[1 à 12] -->
+      <div class="grid grid-rows-12 grid-flow-col p-3 bg-red-400 w-full mb-2">
+          <div class="bg-gray-500 row-start-1 row-end-4">item 1</div>
+          <div class="bg-violet-500">item 2</div>
+          <div class="bg-blue-500">item 3</div>
+      </div>
+     
+     <!-- gap-[x|y]-[1 à 12] -->
+      <div class="grid grid-cols-12  gap-3 p-3 bg-red-400 w-full mb-2">
+          <div class="bg-gray-500 ">item 1</div>
+          <div class="bg-violet-500">item 2</div>
+          <div class="bg-blue-500">item 3</div>
+      </div>
+     
+
+   
+     
+
+  </section>
+  
+  
+
+  
+</body>
+</html>
